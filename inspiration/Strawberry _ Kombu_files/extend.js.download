@@ -1,0 +1,4 @@
+function extend(){
+    window.mapVue();
+}
+//# sourceMappingURL=./extend.js.map
