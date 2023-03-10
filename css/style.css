@@ -1,6 +1,9 @@
 /* basic foundation for everything */
 html{scroll-behavior: smooth;}
-body{margin: 0px;}
+body{
+  margin: 0px;
+  background-color: #f4f4f4;
+}
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
@@ -20,7 +23,7 @@ p,a,li{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 70px;
+    height: 90px;
     position: fixed;
     z-index: 9999;
     padding: 5px 10px;
@@ -52,7 +55,7 @@ p,a,li{
   }
   
   .menu-row .logo-container > div > a > img{
-    height: 50%;
+    height: 40%;
     width: auto;
     border-radius: 30px;
   }
@@ -109,10 +112,11 @@ p,a,li{
   align-items: center;
   display: flex;
 
-  animation: up-down 1.4s infinite ease-in-out alternate;
+  animation: up-down 2.6s infinite ease-in-out alternate;
   
 }
 
+/* keyframes is a css rule that allows the definition of a set of css styles that can be gradually applied to an element over time. */
 @keyframes up-down{
   from{
     transform: translatey(0px);
@@ -136,7 +140,7 @@ p,a,li{
   color: #f4f4f4;
   font-size: 50px;
   text-align: center;
-  animation: up-down 1.4s infinite ease-in-out alternate;
+  animation: up-down 2.6s infinite ease-in-out alternate;
 }
 
 main{
@@ -153,10 +157,102 @@ main{
 }
 
   /****************************************************/
-  /*** random pieces that need styling */
+  /*** content section on homepage styling */
   /****************************************************/
 
+  .need{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .need h3{
+    font-size: 50px;
+  }
 
+  .content{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 75vh; 
+  }
+
+  .image1{
+    background-image: url('/images/gym.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .image2{
+    background-image: url('/images/outdoor\ waterbottle.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  
+  }
+
+  .image3{
+    background-image: url('/images/shower.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .image1, .image2, .image3{
+    height: 400px;
+    width: auto;
+    border-radius: 50px;
+  }
+
+  .image1 .mask{
+  
+    background-color: rgba(28, 158, 218, 0.7);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all linear .25s;
+
+  }
+
+  .image2 .mask{
+  
+    background-color: rgba(27, 118, 202, 0.7);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all linear .25s;
+
+  }
+
+  .image3 .mask{
+  
+    background-color: rgba(43, 68, 209, 0.7);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all linear .25s;
+
+  }
+
+  .image1 .mask h2, .image2 .mask h2, .image3 .mask h2{
+    color: #f4f4f4;
+   font-size: 28px;
+  }
+
+  .image1 .mask:hover, .image2 .mask:hover, .image3 .mask:hover{
+    opacity: 1;
+    border-radius: 50px;
+  }
   
 
