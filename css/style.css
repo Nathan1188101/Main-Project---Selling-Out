@@ -160,14 +160,20 @@ main{
   /*** content section on homepage styling */
   /****************************************************/
 
-  .need{
+  .message{
     padding-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .need h3{
+  .message2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .message h3, .message2 h3{
     font-size: 50px;
   }
 
