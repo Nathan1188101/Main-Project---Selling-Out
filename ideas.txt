@@ -7,3 +7,8 @@ Ideas for product to sell:
 - an apple  
 
 - bottle of water (I think this is the winner)
+
+
+Ideas for things to implement: 
+
+- use java script to do some kind of modal menu pop up

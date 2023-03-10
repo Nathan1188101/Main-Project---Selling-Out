@@ -188,14 +188,14 @@ main{
   }
 
   .image1{
-    background-image: url('/images/gym.jpeg');
+    background-image: url('../images/gym.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
   }
 
   .image2{
-    background-image: url('/images/outdoor\ waterbottle.jpeg');
+    background-image: url('../images/outdoor\ waterbottle.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -203,7 +203,7 @@ main{
   }
 
   .image3{
-    background-image: url('/images/shower.jpeg');
+    background-image: url('../images/shower.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -262,3 +262,72 @@ main{
   }
   
 
+  /****************************************************/
+  /*** hamburger styling */
+  /****************************************************/
+
+  /* maybe get a link to credit your inspo */
+  /* inspiration: https://codepen.io/Xavi1312/pen/pogLpMG */
+
+  .menu-btn {
+    --box-shadow-color: rgba(255, 101, 47, 0.2);
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* border: 5px solid #fff; */
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* color change for when the header changes color on scroll */
+  .scrolled-menu  .menu-btn .menu-btn__burger{
+    background-color: #f4f4f4;
+  }
+
+  .scrolled-menu  .menu-btn .menu-btn__burger::before{
+    background-color: #f4f4f4;
+  }
+
+  .scrolled-menu  .menu-btn .menu-btn__burger::after{
+    background-color: #f4f4f4;
+  }
+  
+  .menu-btn__burger,
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    width: 50px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: black; 
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-16px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(16px);
+  }
+  
+  /* animation for the burger */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+  
+  
