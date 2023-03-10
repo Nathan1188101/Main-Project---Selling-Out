@@ -26,6 +26,7 @@ p,a,li{
     padding: 5px 10px;
     background-color: rgba(255, 255, 255, 1);
     transition: all 0.25s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
   }
 
   .menu > li > a:hover{
@@ -107,7 +108,18 @@ p,a,li{
   justify-content: center;
   align-items: center;
   display: flex;
+
+  animation: up-down 1.4s infinite ease-in-out alternate;
   
+}
+
+@keyframes up-down{
+  from{
+    transform: translatey(0px);
+  }
+  to{
+    transform: translatey(-20px);
+  }
 }
 
 .masthead > div{
@@ -124,7 +136,7 @@ p,a,li{
   color: #f4f4f4;
   font-size: 50px;
   text-align: center;
-  
+  animation: up-down 1.4s infinite ease-in-out alternate;
 }
 
 main{
@@ -139,30 +151,6 @@ main{
 .example-1 > h2{
   font-size: 3em;
 }
-
-  /****************************************************/
-  /*** square styling */
-  /****************************************************/
-
-  body {
-    height: 500vh;
-}
-
-  .cool-square{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .square {
-    position: fixed;
-    background-color: deepskyblue;
-}
-
-
-
-
 
   /****************************************************/
   /*** random pieces that need styling */
