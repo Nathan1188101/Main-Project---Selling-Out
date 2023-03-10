@@ -17,4 +17,19 @@ $(document).ready(function(){
         
     });
 
+    $(function(){
+        
+        $(window).on("scroll", function(){
+            if($(window).scrollTop() > 80){
+                $(".menu-row").addClass("scrolled-menu");
+            }
+            
+            else
+            {
+                $(".menu-row").removeClass("scrolled-menu");
+            }
+        });
+        
+    });
+
 });
