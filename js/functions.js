@@ -4,9 +4,7 @@ document.addEventListener('DOMContentLoaded', (loaded) => {
     
 });
 
-
-//create function that will call to the global header and footer. 
-
+//function that calls to the global header and footer. 
 $(document).ready(function(){
 
     //calling to the global header and footer
