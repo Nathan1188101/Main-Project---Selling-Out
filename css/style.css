@@ -748,16 +748,64 @@ main{
   }
 
   /****************************************************/
-  /*** svg on product page styling */
+  /*** top svg section on product page styling */
+  /****************************************************/
+
+ .wavy-section {
+  position: relative;
+  height: 25px;
+  width: 100%;
+}
+
+.wavy-section {
+  fill:#448AFF;
+  position: relative;
+  height: 25px;
+  width: 100%;
+  margin-bottom: -25px;
+}
+
+.wavy-section1 {
+  position: relative;
+  height: 25px;
+  width: 100%;
+  top: -25px;
+  fill: #376ece;
+}
+
+.top-svg{
+  padding-bottom: 20%;
+}
+
+.bottom-svg{
+  padding-bottom: 20%;
+}
+
+.top-svg{
+  margin-top: 25px;
+}
+
+  /****************************************************/
+  /*** bottom svg section on product page styling */
   /****************************************************/
   
-  .wavy-section{
-    fill: #B3E5FC;
+  .wavy-section-bottom {
+    fill: #448AFF;
+    position: relative;
+    height: 25px;
+    width: 100%;
   }
   
-  .wavy-section-bottom{
-      margin-bottom: 0;
-      padding-bottom: 0;
+  .wavy-section-bottom1 {
+    position: relative;
+    height: 25px;
+    width: 100%;
+    top: -25px;
+    fill: #376ece;
+  }
+
+  .bottom-svg{
+    margin-bottom: 45px;
   }
 
   /****************************************************/
@@ -781,7 +829,20 @@ main{
 
 
   /****************************************************/
-  /*** purchase button styling */
+  /*** about us page styling */
+  /****************************************************/
+
+  .about-us h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    font-size: 40px;
+  }
+
+
+
+  /****************************************************/
+  /*** purchase button on product page styling */
   /****************************************************/
 
   button {
@@ -839,6 +900,64 @@ main{
     }
   }
 
+  
+  /****************************************************/
+  /*** media queries */
+  /****************************************************/
+
+  
+/* Styles for screens smaller than 768px (mobile devices) */
+@media screen and (max-width: 768px) {
+      .product-image{
+        grid-template-columns: 100%;
+      }
+      .image-slider{
+        width: 100%;
+        grid-template-columns: 100%;
+      }
+      #slides{
+        width: 100%;
+        grid-template-columns: 100%;
+      }
+      .bottom-svg{
+        width: 100%;
+        grid-template-columns: 100%;
+        margin-bottom: 0px;
+      }
+      #globalFooter{
+        width: 100%;
+        grid-template-columns: 100%;
+        margin-top: 0px;
+      }
+      #globalHeader{
+        width: 100%;
+        grid-template-columns: 100%;
+      }
+      .menu{
+        width: 100%;
+        grid-template-columns: 100%;
+        display: flex;
+      }
+      .masthead-1{
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-area: hero;
+        height: 100vh;
+        background-attachment: fixed; 
+        background-size: cover;
+      }
+
+}
+
+/* Styles for screens between 768px and 1024px (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Styles for screens larger than 1024px (desktops) */
+@media screen and (min-width: 1024px) {
+  
+}
   
   
   
