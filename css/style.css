@@ -396,7 +396,7 @@ main{
 
    #slides .slide_2 {
       background-image: url(../images/greenbottle.png);
-      background-size: 135%;
+      background-size: 120%;
       background-repeat:no-repeat;
       background-position:center;
       color: black;
@@ -406,7 +406,7 @@ main{
    #slides .slide_3 {
       background-image: url(../images/metalwaterbottle1.png);
       background-repeat:no-repeat;
-      background-size: 135%;
+      background-size: 120%;
       background-position:center;
       color: black;
       font-weight: 700;
