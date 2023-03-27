@@ -1104,6 +1104,7 @@ main{
         grid-template-columns: 100%;
         margin-top: 0px;
       }
+     
       #globalHeader .menu{
         width: 100%;
         padding-right: 100px;
@@ -1135,7 +1136,10 @@ main{
         width: 100%;
         grid-template-columns: 100%;
       }
-
+      .content{
+        width: 100%;
+        grid-template-columns: 100%;
+      }
 }
 
 /* Styles for screens between 768px and 1024px (tablets) */
@@ -1193,6 +1197,10 @@ main{
     background-size: cover;
   }
   .masthead{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .content{
     width: 100%;
     grid-template-columns: 100%;
   }
