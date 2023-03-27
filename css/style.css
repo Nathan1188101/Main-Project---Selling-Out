@@ -517,7 +517,7 @@ main{
 
     .product-desc{
       font-family: 'Montserrat', sans-serif;
-
+      letter-spacing: 1px;
     }
 
     .product-title{
@@ -747,6 +747,19 @@ main{
     transition: background-color 0.25s ease-in-out;
   }
 
+  .form-container p input{
+    border-radius: 20px;
+    padding-left: 10px;
+    font-family: 'Space Mono', monospace
+  }
+
+  .form-container form p textarea{
+    border-radius: 20px;
+    width: 247px;
+    padding-left: 10px;
+    font-family: 'Space Mono', monospace;
+  }
+
   /****************************************************/
   /*** top svg section on product page styling */
   /****************************************************/
@@ -812,11 +825,11 @@ main{
   /*** contact page styling */
   /****************************************************/
 
-  .form-container-contact{
+  .contact-form-container{
     display: flex;
     justify-content: center;
     padding-bottom: 150px;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   .questions > h1{
@@ -824,6 +837,22 @@ main{
       justify-content: center;
       text-align: center;
       font-size: 50px;
+      font-family: 'Inter', sans-serif;
+      letter-spacing: 10px;
+      padding-top: 10px;
+  }
+  
+  .contact-form-container form p input{
+      border-radius: 20px;
+      padding-left: 10px;
+      font-family: 'Space Mono', monospace;
+  }
+
+  .contact-form-container form p textarea{
+    border-radius: 20px;
+    width: 247px;
+    padding-left: 10px;
+    font-family: 'Space Mono', monospace;
   }
 
 
@@ -832,15 +861,129 @@ main{
   /*** about us page styling */
   /****************************************************/
 
-  .about-us h2{
+  .about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ._water{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    letter-spacing: 10px;
+  } 
+
+   .about-us div:first-child{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px; 
+    align-items: center;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0px;
+  } 
+
+  .about-us div:first-child p{
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .about-us div:first-child img{
+    height: 230px;
+    width: auto;
+    border: solid #0e0e0e;
+    transition: box-shadow .5s ease-out;
+  }
+
+  .about-us div:first-child img:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: box-shadow .5s ease-out;
+  }
+
+  .see-product{
     display: flex;
     justify-content: center;
     padding-top: 10%;
-    font-size: 40px;
+    padding-bottom: 10%;
   }
 
+  /* second about us section */
 
+  .about-us2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+  }
+    
+  .about-us2 div:first-child{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px; 
+    align-items: center;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0px;
+  } 
 
+  .about-us2 div:first-child p{
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .about-us2 div:first-child img{
+    height: 230px;
+    width: auto;
+    border: solid #0e0e0e;
+    transition: box-shadow .5s ease-out;
+  }
+
+  .about-us2 div:first-child img:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: box-shadow .5s ease-out;
+  }
+
+  .about-us{
+    background-color:#005abbc0; 
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    transition: box-shadow .5s ease-out;
+  }
+
+  .about-us:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: box-shadow .5s ease-out;
+  }
+        
+  .about-us2{
+    background-color:#448AFF; 
+    padding-top: 100px;
+    padding-bottom: 80px;
+    border-radius: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    transition: box-shadow .5s ease-out;
+    margin-top: 50px;
+  }
+
+  .about-us2:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: box-shadow .5s ease-out;
+  }
+                 
   /****************************************************/
   /*** purchase button on product page styling */
   /****************************************************/
@@ -883,6 +1026,14 @@ main{
     justify-content: center;
   } 
 
+  .aboutUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7%;
+    padding-top: 2%;
+  }
+
   button:hover {
     animation: pop 0.7s ease-in-out;
   }
@@ -900,7 +1051,6 @@ main{
     }
   }
 
-  
   /****************************************************/
   /*** media queries */
   /****************************************************/
@@ -908,6 +1058,22 @@ main{
   
 /* Styles for screens smaller than 768px (mobile devices) */
 @media screen and (max-width: 768px) {
+      .about-us{
+        width: 100%;
+        grid-template-columns: 100%;
+      }
+      .about-us div:first-child{
+        width: 100%;
+        grid-template-columns: 100%;
+      }
+      .about-us2{
+        width: 100%;
+        grid-template-columns: 100%;
+      }
+      .about-us2 div:first-child{
+        width: 100%;
+        grid-template-columns: 100%;
+      }
       .product-image{
         grid-template-columns: 100%;
       }
@@ -946,12 +1112,73 @@ main{
         background-attachment: fixed; 
         background-size: cover;
       }
+      .masthead{
+        width: 100%;
+        grid-template-columns: 100%;
+      }
 
 }
 
 /* Styles for screens between 768px and 1024px (tablets) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
+  .about-us{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .about-us div:first-child{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .about-us2{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .about-us2 div:first-child{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .product-image{
+    grid-template-columns: 100%;
+  }
+  .image-slider{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  #slides{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .bottom-svg{
+    width: 100%;
+    grid-template-columns: 100%;
+    margin-bottom: 0px;
+  }
+  #globalFooter{
+    width: 100%;
+    grid-template-columns: 100%;
+    margin-top: 0px;
+  }
+  #globalHeader{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .menu{
+    width: 100%;
+    grid-template-columns: 100%;
+    display: flex;
+  }
+  .masthead-1{
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-area: hero;
+    height: 100vh;
+    background-attachment: fixed; 
+    background-size: cover;
+  }
+  .masthead{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
 }
 
 /* Styles for screens larger than 1024px (desktops) */
@@ -959,7 +1186,9 @@ main{
   
 }
   
-  
+  /****************************************************/
+  /*** media queries */
+  /****************************************************/
   
 
 

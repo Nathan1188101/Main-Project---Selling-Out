@@ -12,6 +12,7 @@ $(document).ready(function(){
          
         $("#globalHeader").load("globalHeader.html");
         $("#globalFooter").load("globalFooter.html");
+        $("#globalFooter2").load("globalFooter2.html");
         
     });
 
