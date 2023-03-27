@@ -846,6 +846,7 @@ main{
       border-radius: 20px;
       padding-left: 10px;
       font-family: 'Space Mono', monospace;
+      background-color: #f4f4f4;
   }
 
   .contact-form-container form p textarea{
@@ -853,6 +854,7 @@ main{
     width: 247px;
     padding-left: 10px;
     font-family: 'Space Mono', monospace;
+    background-color: #f4f4f4;
   }
 
 
@@ -877,6 +879,10 @@ main{
     letter-spacing: 10px;
   } 
 
+  ._water h1{
+    font-family: 'Space Mono', monospace;
+  }
+
    .about-us div:first-child{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -893,6 +899,8 @@ main{
     justify-content: center;
     text-align: center;
     letter-spacing: 2px;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
   }
 
   .about-us div:first-child img{
@@ -939,6 +947,8 @@ main{
     justify-content: center;
     text-align: center;
     letter-spacing: 2px;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
   }
 
   .about-us2 div:first-child img{
