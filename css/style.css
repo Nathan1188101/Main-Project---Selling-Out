@@ -1086,18 +1086,16 @@ main{
       }
       .product-image{
         grid-template-columns: 100%;
+         width: 100%;
       }
       .image-slider{
         width: 100%;
         grid-template-columns: 100%;
-      }
-      #slides{
-        width: 100%;
-        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-right: 200px;
       }
       .bottom-svg{
-        width: 100%;
-        grid-template-columns: 100%;
         margin-bottom: 0px;
       }
       #globalFooter{
@@ -1105,7 +1103,17 @@ main{
         grid-template-columns: 100%;
         margin-top: 0px;
       }
+      #globalHeader .menu{
+        width: 100%;
+        padding-right: 100px;
+        grid-template-columns: 100%;
+      }
       #globalHeader{
+        width: 100%;
+        grid-template-columns: 100%;
+        max-width: 67%;
+      }
+      .menu-row{
         width: 100%;
         grid-template-columns: 100%;
       }
@@ -1149,12 +1157,9 @@ main{
   }
   .product-image{
     grid-template-columns: 100%;
+    width: 100%;
   }
   .image-slider{
-    width: 100%;
-    grid-template-columns: 100%;
-  }
-  #slides{
     width: 100%;
     grid-template-columns: 100%;
   }
@@ -1171,6 +1176,7 @@ main{
   #globalHeader{
     width: 100%;
     grid-template-columns: 100%;
+    /* max-width: 67%; */
   }
   .menu{
     width: 100%;
@@ -1193,25 +1199,16 @@ main{
 
 /* Styles for screens larger than 1024px (desktops) */
 @media screen and (min-width: 1024px) {
-  
+  .image-slider{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .menu-row{
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .bottom-svg{
+   margin-bottom: 0;
+  }
+ 
 }
-  
-  /****************************************************/
-  /*** media queries */
-  /****************************************************/
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
